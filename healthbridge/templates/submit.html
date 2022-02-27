@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scores</title>
+        <style>
+            * {
+                border: 0px;
+                font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+            }
+        
+            body {
+        
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+            }
+        
+            .box {
+                align-items: center;
+            }
+        
+            .box_1 {
+        
+                align-items: center;
+                text-align: center;
+                font-size: large;
+                color: #353048;
+            }
+        
+            .box_1 h3 {
+                font-size: 1.4em;
+            }
+        
+            .styled-table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 1.0em;
+                font-family: sans-serif;
+                min-width: 750px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+            .styled-table thead tr {
+                color: #ffff;
+                text-align: center;
+                background-color: #353048;
+                height: 6vh;
+            }
+        
+            .styled-table th,
+            .styled-table td {
+                padding: 12px 15px;
+            }
+        
+            .styled-table tbody tr {
+                height: 5vh;
+            }
+        
+            .styled-table tbody tr:nth-of-type(even) {
+                background-color: #ebedfdb1;
+        
+            }
+        
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #0d568e;
+            }
+        
+            .styled-table tbody tr {
+                text-align: center;
+            }
+        
+            .styled-table tbody td:nth-child(2) {
+                text-align: left;
+            }
+        
+            .styled-table tr:first-child th:first-child {
+                border-top-left-radius: 6px;
+            }
+        
+            .styled-table tr:first-child th:last-child {
+                border-top-right-radius: 6px;
+            }
+        
+            .styled-table tr:last-child td:first-child {
+                border-bottom-left-radius: 6px;
+            }
+        
+            .styled-table tr:last-child td:last-child {
+                border-bottom-right-radius: 6px;
+            }
+        
+            .styled-table tbody tr:last-child {
+                font-weight: bold;
+                background: #353048;
+            }
+        
+            .paging {
+                background: #353048;
+                color: #f3f3f3;
+                font-size: 1.1em;
+            }
+        
+            .view_ticket {
+                width: 75%;
+                height: 100%;
+                border-radius: 6px;
+                font-size: 0.9em;
+                background: #d7dbf9b1;
+                ;
+            }
+        </style>
+</head>
+<body>
+
+    <h1>
+        Based on your survey, {{ interpretation }}
+        
+        <br>
+
+        <table class= "styled-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Open At</th>
+            <th>Closes At</th>
+            <th>Days Open</th>
+            <th>Min Dist</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for item in items %}
+    
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[11] }}</td>
+            <td>{{ item[12] }}</td>
+            <td>{{ item[13] }}</td>
+            <td>{{ item[16] }}</td>
+
+        </tr>
+
+        {% endfor %}
+        </tbody>
+
+        </table>
+
+
+    </h1>
+    
+</body>
+</html>
