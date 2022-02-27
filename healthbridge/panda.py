@@ -7,7 +7,7 @@ def pushandpull(lat, lng, score, contact):
     for i in range(len(centre_locations.index)):
         x1 = centre_locations["latitudes"][i]
         y1 = centre_locations["longitudes"][i]
-        minboi = math.sqrt((lat-x1)*(lat-x1) + (lng-y1)*(lng-y1))
+        minboi = round(69*(math.sqrt((lat-x1)*(lat-x1) + (lng-y1)*(lng-y1))), 2)
         min_dist.append(minboi)
 
     centre_locations['minimum distance'] = min_dist
