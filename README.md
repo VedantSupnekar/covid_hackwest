@@ -15,7 +15,7 @@ This is a static web-application,A static web application that takes a survey (T
 1. Download this repository to your local machine. 
 
 ```
-$ git clone https://github.com/rohangosavi01/zendesk-ticket-viewer
+$ git clone https://github.com/rohangosavi01/covid_hackwest
 ```
 
 2. Open this folder in your terminal/cmd prompt and run the following code:
