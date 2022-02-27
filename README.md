@@ -41,10 +41,6 @@ $ Flask run
     - Learned more about HTML, CSS use with Jinja2 tools to parse variables to display dynammic data. 
     - Learned more about Python Web Application enviornment, HTTP Requests and authentication.
 
-- Zendesk API Documentation    
-    - https://developer.zendesk.com/api-reference/
-    - https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/
-
 - Python & Flask 
     - https://flask.palletsprojects.com/en/2.0.x/tutorial/index.html
     - https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1917s
